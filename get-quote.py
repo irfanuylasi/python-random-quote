@@ -8,6 +8,7 @@ def primary():
 
     f = open("quotes.txt")
     quotes = f.readlines()
+    quotes = [q.strip() for q in quotes]
     f.close()
 
     print(quotes[rnd])
